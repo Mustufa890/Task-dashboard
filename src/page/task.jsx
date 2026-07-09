@@ -5,7 +5,7 @@ import {supabase} from '../supabaseClient'
 
 const Task = () => {
    const [name, setName] = useState('')
-  const [task, setTask] = useState('')
+  const [phone, setPhone] = useState('')
   const [data, setData] = useState([])
   const navigate = useNavigate()
   
@@ -29,7 +29,7 @@ const Task = () => {
   };
 
   const addData = async()=>{
-   const {error} = await supabase.from('emp_data').insert([{name, task}])
+   const {error} = await supabase.from('emp_data').insert([{name, phone}])
    if(error){
    alert(error.message) 
    }else{
