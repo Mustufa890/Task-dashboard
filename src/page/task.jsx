@@ -72,7 +72,7 @@ const Task = () => {
   </ul>
   {data.map((item)=>(
   <li key={item.id} >
-  {item.name} - {item.task}  
+  {item.name} - {item.phone}  
   </li>  
   ))}    
   </div>
