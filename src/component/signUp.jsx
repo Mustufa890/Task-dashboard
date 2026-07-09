@@ -57,7 +57,7 @@ Swal.fire({
   await supabase.auth.signInWithOAuth({
   provider: 'google',
   options:{
-  redirectTo:'http://localhost:5173/task'  
+  redirectTo:`${window.location.origin}/task` 
   }
 })
   }
