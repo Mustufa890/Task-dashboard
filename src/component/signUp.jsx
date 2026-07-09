@@ -33,7 +33,7 @@ const SignUp = () => {
   email,
   password,
   options:{
-  emailRedirectTo:`http://localhost:5173/task` 
+  emailRedirectTo:`${window.location.origin}/task`
   }
 });
 if(error){
