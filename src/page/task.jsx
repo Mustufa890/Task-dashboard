@@ -63,7 +63,7 @@ const Task = () => {
   />
   <button className='flex-1 bg-purple-900 text-white font-bold p-3 rounded-xl hover:bg-purple-700' onClick={addData} >Add Task</button>     
    <input className='w-full rounded-xl border border-gray-400 p-3' type="text" placeholder='Enter your Task' 
-  value={task} onChange={(e)=> setTask(e.target.value)}
+  value={phone} onChange={(e)=> setTask(e.target.value)}
   />
      
   <button className='flex-1 bg-purple-900 text-white font-bold p-3 rounded-xl hover:bg-purple-700' onClick={fetchData} >Fetch Task</button>
